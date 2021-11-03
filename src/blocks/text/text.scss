@@ -1,0 +1,26 @@
+.text{
+    margin: 0;
+    font-size: 9px;
+
+    &--size--s{
+        font-size: 8px;
+    }
+
+    &--size--l{
+        font-size: 10px;
+    }
+
+    &--color--light{
+        color: #9A9A9A;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .text{
+        font-size: 14px;
+    
+        &--size--s{
+            font-size: 14px;
+        }
+    }
+}

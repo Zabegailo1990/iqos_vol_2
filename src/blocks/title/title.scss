@@ -1,0 +1,65 @@
+.title{
+    text-transform: uppercase;
+    font-family: 'Noto Sans', sans-serif ;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 14px; 
+    color: #765151;
+    margin: 0;
+
+    &--color--white{
+        color: #fff;
+    }
+
+    &--color--dark{
+        color: #404040;
+    }
+
+
+    &--size--l{
+        font-size: 15px; 
+    }
+
+    &--size--s{
+        font-size: 12px; 
+    }
+
+    &--size--xs{
+        font-size: 10px; 
+    }
+
+    &--faq{
+        font-size: 20px;
+        text-transform: none;
+        font-weight: 400;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .title{
+        font-size: 30px; 
+
+        &--size--l{
+            font-size: 36px;
+            letter-spacing: 3px;
+        }
+    
+        &--size--xs{
+          font-size: 16px;
+        }
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    .title{
+        &--size--l{
+            font-size: 60px;
+            letter-spacing: 3px;
+        }
+
+        &--faq{
+            font-size: 34px;
+           
+        }
+    }
+}

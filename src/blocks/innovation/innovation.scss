@@ -1,0 +1,30 @@
+.innovation{
+    padding: 16px 0;
+
+    &__inner{
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    :not(:last-child){
+        margin-bottom: 18px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .innovation{
+        padding: 48px 0;
+
+        &__inner{
+            max-width: 602px;
+        }
+    
+        &__title{
+            margin-bottom: 24px;
+        }
+    
+        :not(:last-child){
+            margin-bottom: 24px;
+        }
+    }
+}

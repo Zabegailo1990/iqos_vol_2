@@ -1,0 +1,59 @@
+.subscription{
+    background-color: #F0E3DF;;
+    padding: 16px 0;
+    box-sizing: border-box;
+
+    &__title{
+        margin: 0 auto 16px auto;
+        max-width: 280px;
+    }
+
+    &__inner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item{
+        text-transform: uppercase;     
+        color: #765151;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin: 0 8px 0 0;
+    }
+
+    &__link{
+        display: flex;
+        align-items: center;
+
+        &:nth-of-type(1){
+            margin-right: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .subscription{
+        padding: 48px 0;
+    
+        &__title{
+            margin-bottom: 24px;
+            max-width: 720px;
+        }
+
+        &__item{     
+            font-size: 24px;
+            margin-right: 16px;
+        }
+    
+        &__link{
+            display: flex;
+            align-items: center;
+    
+            &:nth-of-type(1){
+                margin-right: 10px;
+            }
+        }
+    }
+}

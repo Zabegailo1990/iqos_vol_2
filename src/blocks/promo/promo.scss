@@ -1,0 +1,37 @@
+.promo{
+    background: url(../../img/images/bg__promo.jpg)center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 216px;
+    padding: 14px 0 10px;
+    box-sizing: border-box;
+    box-shadow: 0px -60px 42px -16px rgba(0, 0, 0, 0.65) inset;
+
+    &__item{
+        margin-bottom: 14px;
+    }
+
+    :last-child{
+        margin-top: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .promo{
+        min-height: 680px;
+        padding: 27px 0 25px;
+        box-shadow: 0px -150px 68px -16px rgb(0 0 0 / 65%) inset;
+
+        &__item{
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .promo{
+        &__title{
+            margin-bottom: 8px;
+        }
+    }
+}
