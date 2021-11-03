@@ -5,7 +5,7 @@
 }
 
 .promo {
-    background: url(../../img/images/bg__promo.jpg) center/cover no-repeat;
+    background: url(../img/images/bg__promo.jpg) center/cover no-repeat;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
