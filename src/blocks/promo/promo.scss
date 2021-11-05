@@ -1,26 +1,56 @@
 .promo{
-    background: url(../img/images/bg__promo.jpg) center / cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    min-height: 216px;
-    padding: 14px 0 10px;
-    box-sizing: border-box;
+    position: relative;
     box-shadow: 0px -60px 42px -16px rgba(0, 0, 0, 0.65) inset;
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        min-height: 221px;
+        padding: 14px 0 10px;
+        box-sizing: border-box;
+    }
+
+    &__img{
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+    }
 
     &__item{
         margin-bottom: 14px;
     }
 
-    :last-child{
+    &__button{
         margin-top: auto;
+        position: relative;
+        padding-bottom: 12px;
+        font-size: 10px;
+        color: #fff;
+
+        &::after{
+            content: "";
+            position: absolute;
+            width: 7px;
+            height: 7px;
+            left: 50%;
+            bottom: 0;
+            border-right: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            transform: rotate(45deg) translateX(-50%);
+            animation: bounce 1.2s linear 0s infinite alternate;
+        }
     }
+
 }
 
 @media screen and (min-width: 768px) {
     .promo{
-        min-height: 680px;
-        padding: 27px 0 25px;
         box-shadow: 0px -150px 68px -16px rgb(0 0 0 / 65%) inset;
+
+        &__inner{
+            min-height: 563px;
+            padding: 27px 0 25px;
+        }
 
         &__item{
             margin-bottom: 10px;
@@ -32,6 +62,36 @@
     .promo{
         &__title{
             margin-bottom: 8px;
+        }
+
+        &__button{
+            padding-bottom: 40px;
+            font-size: 30px;
+    
+            &::after{
+                width: 25px;
+                height: 25px;
+                border-right: 3px solid #fff;
+                border-bottom: 3px solid #fff;
+            }
+    
+            @keyframes bounce {
+                50% {
+                    bottom: 10px;
+                }
+                50% {
+                    bottom: -10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    .promo{
+
+        &__button{
+            cursor: pointer;
         }
     }
 }

@@ -4,8 +4,7 @@
     box-sizing: border-box;
 
     &__title{
-        margin: 0 auto 16px auto;
-        max-width: 280px;
+        margin-bottom: 16px;
     }
 
     &__inner{
@@ -20,7 +19,7 @@
         font-size: 14px;
         font-weight: 600;
         letter-spacing: 1px;
-        margin: 0 8px 0 0;
+        margin-right: 8px;
     }
 
     &__link{
@@ -28,8 +27,15 @@
         align-items: center;
 
         &:nth-of-type(1){
-            margin-right: 10px;
+            margin-right: 8px;
         }
+    }
+
+    &__icon{
+        width: 17px;
+        height: 17px;
+        fill: #765151;
+        transition: fill .5s;
     }
 }
 
@@ -39,7 +45,6 @@
     
         &__title{
             margin-bottom: 24px;
-            max-width: 720px;
         }
 
         &__item{     
@@ -53,6 +58,29 @@
     
             &:nth-of-type(1){
                 margin-right: 10px;
+            }
+        }
+
+        &__icon{
+            width: 30px;
+            height: 30px;
+            fill: #765151;
+        }
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    .subscription{
+
+        &__icon--inst{
+            &:hover{
+                fill: #d13a8d;
+            }
+        }
+
+        &__icon--vk{
+            &:hover{
+                fill: #3a6fd1;
             }
         }
     }

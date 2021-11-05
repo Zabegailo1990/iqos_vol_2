@@ -44,12 +44,12 @@
     .accordion{
 
         &__item{
-            &:first-child{
-                border-top: 1px solid #E5E5E5;
+            &:nth-child(n){
+                border-top: 1px solid #ADADAD;
             }
 
             &:last-child{
-                border-bottom: 1px solid #E5E5E5;
+                border-bottom: 1px solid #ADADAD;
             }
         }
     
@@ -84,7 +84,6 @@
 
         &__item.active &__title::after{
             transform: translateY(-50%) rotate(-135deg);
-            border-color: #9A9A9A;
         }
     }
 }

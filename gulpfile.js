@@ -179,4 +179,4 @@ gulp.task('dev', gulp.parallel('scssDev', 'watch', 'browserSync'));
 
 // Команда сборки***
     // "Перед исполнением команды, необходимо предварительно отключить команду Dev, иначе css файл не минифицируется "
-gulp.task('prod', gulp.parallel('del', 'scssProd', 'js', 'fonts', 'imgMin', 'svgMin'));
+gulp.task('prod', gulp.parallel('del', 'scssProd', 'js', 'fonts', 'svgSprite', 'imgMin', 'svgMin'));

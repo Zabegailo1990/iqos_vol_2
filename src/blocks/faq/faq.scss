@@ -1,17 +1,15 @@
 .faq{
     padding: 34px 0 0;
-    background-color: #F5F5F3;;
+    background-color: #F5F5F3;
 
     &__inner{
         text-align: left;
-        max-width: 1220px;
-        padding: 0 20px;
-        margin: 0 auto;
 
         &:nth-of-type(2){
-            text-align: center;
             padding: 12px 20px;
             background-color: #fff;
+            border-bottom: 1px solid #ECEAEB;
+            margin-bottom: 20px;
         }
     }
 
@@ -26,6 +24,7 @@
     &__text{
         max-width: 178px;
         margin-right: auto;
+        text-align: center;
     }
 
     &__link{

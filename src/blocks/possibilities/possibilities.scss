@@ -1,11 +1,10 @@
 .possibilities{
     background-color: #E9E6E6;
-    padding: 16px 0;
+    padding: 20px 0;
     box-sizing: border-box;
 
     &__title{
-        max-width: 280px;
-        margin: 0 auto 16px auto;
+        margin-bottom: 20px;
     }
 
     &__inner{
@@ -17,8 +16,8 @@
     &__item{
         width: 146px;
         background-color: #fff;
-        padding: 16px 0;
-        box-sizing: border-box;
+        padding: 10px 0;
+        box-sizing: inherit;
 
         :not(:last-child){
             margin-bottom: 16px;
@@ -30,13 +29,25 @@
     }
 
     &__text{
-        max-width: 126px;
-        margin: 0 auto;
+        padding: 0 10px;
+        box-sizing: inherit;
     }
 
     &__img{
         width: 100%;
         height: 80px;
+    }
+
+    &__button{
+        background-color: #765151;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight: 700;
+        color: #F0E3DF;
+        letter-spacing: 2px;
+        cursor: pointer;
+        padding: 7px 21px;
+        box-sizing: inherit;
     }
 }
 
@@ -49,14 +60,12 @@
         }
     
         &__title{
-            max-width: 520px;
-            margin-bottom: 36px;
+            margin-bottom: 45px;
         }
-    
     
         &__item{
             width: 268px;
-            padding: 24px 0;
+            padding: 23px 0;
     
             :not(:last-child){
                 margin-bottom: 24px;
@@ -67,13 +76,15 @@
             }
         }
     
-        &__text{
-            max-width: 244px;
-        }
-    
         &__img{
             width: 100%;
-            height: 147px;
+            height: 148px;
+        }
+
+        &__button{
+            letter-spacing: 3px;
+            font-size: 18px;
+            padding: 12px 44px;
         }
     }
 }
