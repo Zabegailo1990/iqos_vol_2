@@ -3,38 +3,8 @@
     padding: 0 10px;
     margin: 0 auto;
 
-    &--innovation{
-        max-width: 280px;
-    }
-
-    &--possibilities{
-        max-width: 280px;
-    }
-
     &--faq{
         padding: 0 20px;
     }
 }
 
-
-@media screen and (min-width: 768px) {
-    .container{
-
-        &--innovation{
-            max-width: 500px;
-        }
-    
-        &--possibilities{
-            max-width: 500px;
-        }
-    }
-}
-
-@media screen and (min-width: 1180px) {
-    .container{
-
-        &--possibilities{
-            max-width: none;
-        }
-    }
-}

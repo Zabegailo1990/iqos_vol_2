@@ -1,8 +1,17 @@
 .innovation{
     padding: 16px 0;
 
-    :not(:last-child){
+    &__title{
         margin-bottom: 18px;
+    }
+
+    &__inner{
+        margin: 0 auto;
+        max-width: 280px;
+
+        :not(:last-child){
+            margin-bottom: 18px;
+        }
     }
 }
 
@@ -11,7 +20,7 @@
         padding: 48px 0;
 
         &__inner{
-            max-width: 602px;
+            max-width: 600px;
         }
     
         &__title{
