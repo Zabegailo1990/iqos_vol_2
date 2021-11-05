@@ -107,20 +107,26 @@
     padding: 0 10px;
     margin: 0 auto;
 }
-.container--size--s {
+.container--innovation {
     max-width: 280px;
 }
-.container--size--m {
+.container--possibilities {
+    max-width: 280px;
+}
+.container--faq {
     padding: 0 20px;
 }
 
 @media screen and (min-width: 768px) {
-    .container--size--s {
+    .container--innovation {
+        max-width: 500px;
+    }
+    .container--possibilities {
         max-width: 500px;
     }
 }
 @media screen and (min-width: 1180px) {
-    .container--size--s {
+    .container--possibilities {
         max-width: none;
     }
 }
