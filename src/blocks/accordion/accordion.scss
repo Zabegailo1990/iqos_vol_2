@@ -23,7 +23,7 @@
             content: "";
             position: absolute;
             top: 50%;
-            right: 0;
+            right: 10px;
             width: 5px;
             height: 5px;
             transform: translateY(-50%) rotate(45deg);
@@ -36,6 +36,7 @@
     &__text{
         color: #8E8E8E;
         display: none;
+        padding-right: 40px;
         margin-bottom: 10px;
     }
 }
@@ -84,7 +85,11 @@
 
         &__item.active &__title::after{
             transform: translateY(-50%) rotate(-135deg);
+            border-color: #9A9A9A;
+            
         }
+
+    
     }
 }
 
